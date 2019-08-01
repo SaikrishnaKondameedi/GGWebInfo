@@ -4,12 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-
-import com.example.ggwebinfo.Get10;
-import com.example.ggwebinfo.R;
-
 import java.io.IOException;
-
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -23,7 +18,6 @@ public class Main2Activity extends AppCompatActivity {
     public static String BaseURL = "https://www.greedygame.com";
     TextView info10;
     private String str;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,14 +54,10 @@ public class Main2Activity extends AppCompatActivity {
             }
         } );
     }
-
     void get2020() {
         Log.d("test",str);
         String output = "";
         output += str.charAt(10);
         info10.setText(output);
     }
-
-
-
 }

@@ -64,7 +64,7 @@ public class Main3Activity extends AppCompatActivity {
         String output = "";
         for (int i = 0; i < str.length(); i++) {
             if (i % 10 == 0) {
-                output += str.charAt(i);
+                output = output + str.charAt(i);
             }
         }
         every10.setText(output);
